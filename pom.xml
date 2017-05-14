@@ -46,29 +46,11 @@
 		<pinyin4j>2.5.1</pinyin4j>
 		<shiro.version>1.2.3</shiro.version>
 		<guava.version>17.0</guava.version>
-		<mybatis.version>3.3.1</mybatis.version>
-		<mybatis.spring.version>1.2.4</mybatis.spring.version>
-		<spring-tx>4.3.4.RELEASE</spring-tx>
+
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-tx</artifactId>
-				<version>${spring-tx}</version>
-			</dependency>
-			<!--Mybatis -->
-			<dependency>
-				<groupId>org.mybatis</groupId>
-				<artifactId>mybatis</artifactId>
-				<version>${mybatis.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.mybatis</groupId>
-				<artifactId>mybatis-spring</artifactId>
-				<version>${mybatis.spring.version}</version>
-			</dependency>
 			<!-- 解析客户端操作系统、浏览器等 -->
 			<dependency>
 				<groupId>bitwalker</groupId>
@@ -166,11 +148,13 @@
 				<artifactId>jackson-core-asl</artifactId>
 				<version>${codehaus-jackson.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-mapper-asl</artifactId>
 				<version>${codehaus-jackson.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
@@ -188,12 +172,7 @@
 				<artifactId>swagger-annotations</artifactId>
 				<version>${swagger2CoreVersion}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.github.axet</groupId>
-				<artifactId>kaptcha</artifactId>
-				<version>0.0.9</version>
-			</dependency>
-			<!-- verificationCode end -->
+
 			<!-- shiro begin -->
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
